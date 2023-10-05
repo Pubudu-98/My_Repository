@@ -9,7 +9,7 @@ header {
     color: black;
     text-align: center;
     padding: 20px 0;
-    font-style: oblique;
+    font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .menu-container {
@@ -22,20 +22,45 @@ header {
 
 .menu-item {
     flex: 1;
-    border: 3px solid black;
+    border: 1px solid black;
     margin: 10px;
     padding: 20px;
     position: relative;
-    background-color: grey;
+    background-color: rgb(145, 146, 148);
 }
 
-.section-title{
+.section-title-1{
     position: absolute;
     top: 0;
     right: 0;
-    background-color: red;
+    background-color: rgb(242, 188, 179);
+    color: black;
+    padding: 6px 24px;
+    font-size: 18px;
+    font-style: oblique;
+    border: 1px solid black;
+}
+
+.section-title-2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(189, 69, 49);
     color: white;
     padding: 6px 24px;
-    font-size: 16px;
+    font-size: 18px;
     font-style: oblique;
+    border: 1px solid black;
+}
+
+.section-title-3{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(242, 221, 116);
+    color: black;
+    padding: 6px 24px;
+    font-size: 18px;
+    font-style: oblique;
+    border: 1px solid black;
 }
