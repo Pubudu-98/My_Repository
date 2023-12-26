@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Web App</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        header h1 {
+            margin: 0;
+            font-weight: 400;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style: oblique;
+        }
+        .widget-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        /* Style for the widget button */
+        .widget-button {
+            width: 150px;
+            height: 50px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        main {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80vh;
+        }
+        .tile {
+            width: 250px;
+            height: 250px;
+            background-color: #333;
+            color: white;
+            font-style:italic;
+            font-size: larger;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Home Page</h1>
+    </header>
+
+    <main>
+        <div class="tile" onclick="navigateTo('menu.html')">Menu Page</div>
+        <div class="tile" onclick="navigateTo('Special.html')">Specials</div>
+        <div class="tile" onclick="navigateTo('map.html')">Map</div>
+    </main>
+
+    <footer>
+        <p>Contact us: Phone: (+123) 456-789 | Email: info@demo.resturan@gmail.com | Address: 123 Restaurant - 911, Park Street, Hawlock City, New York</p>
+    </footer>
+
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+
+        function navigateToRandomCategory() {
+            const categories = ['category1.html', 'category2.html', 'category3.html'];
+            const randomCategory = categories[Math.floor(Math.random() * categories.length)];
+            navigateTo(randomCategory);
+        }
+    </script>
+</body>
+</html>
